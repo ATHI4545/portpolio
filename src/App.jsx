@@ -9,6 +9,7 @@ import Projects from './components/Projects';
 import Achievements from './components/Achievements';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Chatbot from './components/Chatbot';
 
 // Custom cursor DOM elements injected at root level
 function CursorElements() {
@@ -78,6 +79,7 @@ export default function App() {
         <Contact />
       </main>
       <Footer />
+      <Chatbot />
     </>
   );
 }
