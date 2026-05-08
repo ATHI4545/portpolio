@@ -150,7 +150,7 @@ export default function Hero() {
             >
               View Projects
             </button>
-            <a href="/assets/Athityaa_Resume_.pdf" download className="btn-outline">
+            <a href="/assets/athityaa_resume.pdf" download className="btn-outline">
               Download Resume ↓
             </a>
           </motion.div>

@@ -60,7 +60,7 @@ export default function Navbar() {
 
           {/* CTA */}
           <a
-            href="/assets/Vedhaanthan_Resume.pdf"
+            href="/assets/athityaa_resume.pdf"
             download
             className="hidden md:flex btn-primary text-sm items-center gap-2"
           >

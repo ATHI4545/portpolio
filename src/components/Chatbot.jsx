@@ -6,7 +6,7 @@ import { Send, X, MessageCircle } from 'lucide-react';
 const KNOWLEDGE_BASE = {
   greeting: {
     patterns: ['hello', 'hi', 'hey', 'greetings', 'good morning', 'good afternoon', 'good evening'],
-    response: "Hey there! 👋 I'm Athityaa's AI assistant. I can tell you about her skills, projects, experience, and more. What would you like to know?"
+    response: "Hey there! 👋 I'm Athityaa's AI assistant. I can tell you about his skills, projects, experience, and more. What would you like to know?"
   },
   about: {
     patterns: ['who is athityaa', 'tell me about athityaa', 'about you', 'introduce yourself', 'who are you', 'tell me about yourself'],
@@ -75,7 +75,7 @@ export default function Chatbot() {
   const [messages, setMessages] = useState([
     {
       id: 1,
-      text: "Hey! 👋 I'm Athityaa's AI Assistant. Ask me anything about her skills, projects, experience, or how to reach her!",
+      text: "Hey! 👋 I'm Athityaa's AI Assistant. Ask me anything about his skills, projects, experience, or how to reach him!",
       sender: 'bot',
       timestamp: new Date()
     }
