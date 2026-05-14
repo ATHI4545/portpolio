@@ -93,7 +93,7 @@ export default function Navbar() {
                     {l}
                   </button>
                 ))}
-                <a href="/assets/Vedhaanthan_Resume.pdf" download
+                <a href="/assets/athityaa_resume.pdf" download
                   className="btn-primary text-center">Resume ↓</a>
               </div>
             </motion.div>

@@ -21,6 +21,7 @@ const projects = [
     description: 'Developed an AI-based chatbot to assist in protein binding affinity predictions using the NVIDIA API for high-throughput computation and visualization.',
     points: ['Integrated NVIDIA API for high-throughput computation and prediction', 'Enabled analysis of 500+ protein interactions per week', 'Helped improve drug discovery research speed'],
     github: 'https://github.com/ATHI4545/project',
+    website: 'https://protein-bind-gamma.vercel.app/',
   },
   {
     title: 'Car Showroom Booking Web Application',
