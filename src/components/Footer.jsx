@@ -37,7 +37,7 @@ export default function Footer() {
           <div className="flex flex-wrap justify-center gap-6">
             {links.map(l => (
               <button key={l} onClick={() => scrollTo(l)}
-                className="text-sm text-white/50 hover:text-purple-400 transition-colors cursor-none">
+                className="text-sm text-white/50 hover:text-purple-400 transition-colors">
                 {l}
               </button>
             ))}

@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { ExternalLink, X, ChevronRight } from 'lucide-react';
-import { FaDna, FaCar, FaMap, FaChartBar, FaHome } from 'react-icons/fa';
+import { FaDna, FaCar, FaMap, FaChartBar, FaHome, FaTachometerAlt } from 'react-icons/fa';
 
 const GithubIcon = ({ size = 15 }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor">
@@ -11,6 +11,24 @@ const GithubIcon = ({ size = 15 }) => (
 );
 
 const projects = [
+  {
+    title: 'ARS SmartTrack',
+    subtitle: 'Full-Stack Productivity & Developer Dashboard',
+    category: 'AI/Full-Stack',
+    icon: FaTachometerAlt,
+    color: 'from-cyan-500 to-blue-600',
+    tags: ['React 19', 'Node.js', 'Firebase', 'Groq AI', 'NVIDIA API', 'GitHub API', 'LeetCode API', 'Cloudinary'],
+    description: 'A full-stack personal productivity and developer-progress tracking dashboard unifying task management, coding analytics, and skill-growth tracking — secured with a three-tier architecture proxying all sensitive operations through an authenticated Express backend.',
+    points: [
+      'Re-architected from client-only to a secured three-tier architecture (React → Express → Firebase)',
+      'Integrated Groq AI chatbot, NVIDIA API for learning roadmaps, GitHub REST API & alfa-leetcode-api for live stats',
+      'Drag-and-drop task management with @hello-pangea/dnd and animated UI via Framer Motion',
+      'Cloudinary-powered certificate/resume storage with Multer file upload pipeline',
+      'Fixed streak calculation bugs and timezone-related date parsing errors in production',
+    ],
+    github: 'https://github.com/ATHI4545',
+    website: 'https://notes-self-track-2gml.vercel.app/login',
+  },
   {
     title: 'Protein Bind Analysis with Chatbot',
     subtitle: 'AI-Powered Drug Discovery',
@@ -89,7 +107,7 @@ function ProjectModal({ project, onClose }) {
         className="relative glass-dark rounded-3xl p-8 max-w-lg w-full z-10 border border-purple-500/30"
         onClick={e => e.stopPropagation()}
       >
-        <button onClick={onClose} className="absolute top-4 right-4 text-white/40 hover:text-white cursor-none">
+        <button onClick={onClose} className="absolute top-4 right-4 text-white/40 hover:text-white">
           <X size={20} />
         </button>
 
@@ -164,7 +182,7 @@ export default function Projects() {
               onClick={() => setFilter(cat)}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.97 }}
-              className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 cursor-none ${
+              className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
                 filter === cat ? 'gradient-purple text-white shadow-lg' : 'glass text-white/60 hover:text-white'
               }`}
             >
@@ -184,7 +202,7 @@ export default function Projects() {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.9 }}
                 transition={{ delay: i * 0.07, duration: 0.4 }}
-                className="glass-dark rounded-2xl p-6 poly-card cursor-none group relative overflow-hidden"
+                className="glass-dark rounded-2xl p-6 poly-card group relative overflow-hidden"
                 onClick={() => setSelected(project)}
               >
                 {/* Shimmer on hover */}

@@ -36,7 +36,7 @@ export default function Navbar() {
           {/* Logo */}
           <motion.button
             onClick={() => scrollTo('Home')}
-            className="font-['Space_Grotesk'] font-bold text-xl tracking-tight cursor-none"
+            className="font-['Space_Grotesk'] font-bold text-xl tracking-tight"
             whileHover={{ scale: 1.05 }}
           >
             <span className="gradient-text">AA</span>
@@ -49,7 +49,7 @@ export default function Navbar() {
               <button
                 key={l}
                 onClick={() => scrollTo(l)}
-                className={`nav-link text-sm font-medium cursor-none transition-colors ${
+                className={`nav-link text-sm font-medium transition-colors ${
                   active === l ? 'text-purple-400 active' : 'text-white/60 hover:text-white'
                 }`}
               >
@@ -60,7 +60,7 @@ export default function Navbar() {
 
           {/* CTA */}
           <a
-            href="/assets/athityaa_resume.pdf"
+            href="/assets/Resume_Athityaa_.pdf"
             download
             className="hidden md:flex btn-primary text-sm items-center gap-2"
           >
@@ -69,7 +69,7 @@ export default function Navbar() {
 
           {/* Mobile toggle */}
           <button
-            className="md:hidden text-white/70 cursor-none"
+            className="md:hidden text-white/70"
             onClick={() => setOpen(!open)}
           >
             {open ? <X size={22}/> : <Menu size={22}/>}
@@ -89,11 +89,11 @@ export default function Navbar() {
               <div className="flex flex-col px-6 py-4 gap-4">
                 {links.map(l => (
                   <button key={l} onClick={() => scrollTo(l)}
-                    className="text-left text-white/70 hover:text-purple-400 transition-colors cursor-none">
+                    className="text-left text-white/70 hover:text-purple-400 transition-colors">
                     {l}
                   </button>
                 ))}
-                <a href="/assets/athityaa_resume.pdf" download
+                <a href="/assets/Resume_Athityaa_.pdf" download
                   className="btn-primary text-center">Resume ↓</a>
               </div>
             </motion.div>

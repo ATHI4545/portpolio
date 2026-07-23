@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { PenTool, Code, Database, Search, Brain, Star,
-  Layers, Monitor, Smartphone, BarChart2 } from 'lucide-react';
+  Layers, Monitor, Smartphone, BarChart2, GitBranch } from 'lucide-react';
 
 const categories = [
   {
@@ -46,7 +46,18 @@ const categories = [
       { name: 'Power BI', level: 75, icon: '📊' },
       { name: 'Tableau', level: 72, icon: '📉' },
       { name: 'MySQL', level: 78, icon: '🗂️' },
-      { name: 'Problem-Solving', level: 88, icon: '🧩' },
+      { name: 'MS Dynamics 365', level: 70, icon: '🔷' },
+    ],
+  },
+  {
+    label: 'DevOps',
+    icon: GitBranch,
+    color: 'from-orange-600 to-red-500',
+    skills: [
+      { name: 'Git', level: 80, icon: '🌿' },
+      { name: 'GitHub', level: 82, icon: '🐙' },
+      { name: 'Version Control', level: 78, icon: '🔀' },
+      { name: 'CI/CD Workflows', level: 65, icon: '⚙️' },
     ],
   },
 ];
@@ -101,7 +112,7 @@ export default function Skills() {
                 onClick={() => setActive(i)}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.97 }}
-                className={`flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 cursor-none ${
+                className={`flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 ${
                   active === i
                     ? 'gradient-purple text-white shadow-lg glow-purple'
                     : 'glass text-white/60 hover:text-white'
@@ -146,7 +157,7 @@ export default function Skills() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="mt-10 flex flex-wrap justify-center gap-3"
         >
-          {['Figma','Photoshop','HTML','CSS','JavaScript','React','MySQL','Wireframing','Prototyping','User Flows','Responsive Design','Design Systems','User Personas','Usability Testing','Competitor Analysis'].map((s, i) => (
+          {['Figma','Photoshop','HTML','CSS','JavaScript','React','MySQL','Git','GitHub','Microsoft Dynamics 365','Wireframing','Prototyping','User Flows','Responsive Design','Design Systems','User Personas','Usability Testing','Competitor Analysis'].map((s, i) => (
             <motion.span
               key={s}
               initial={{ opacity: 0, scale: 0.8 }}

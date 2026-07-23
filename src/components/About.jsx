@@ -4,14 +4,14 @@ import { Palette, Code2, Database, Users, Brain, Briefcase } from 'lucide-react'
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
-  show: (i) => ({ opacity: 1, y: 0, transition: { delay: i * 0.12, duration: 0.6, ease: [0.22,1,0.36,1] } })
+  show: (i) => ({ opacity: 1, y: 0, transition: { delay: i * 0.12, duration: 0.6, ease: [0.22, 1, 0.36, 1] } })
 };
 
 const stats = [
   { label: 'Internships', value: '2', icon: Briefcase },
-  { label: 'Projects', value: '3+', icon: Code2 },
-  { label: 'CGPA', value: '8.7', icon: Brain },
-  { label: 'LeetCode', value: '300+', icon: Users },
+  { label: 'Projects', value: '5+', icon: Code2 },
+  { label: 'CGPA', value: '8.8', icon: Brain },
+  { label: 'LeetCode', value: '400+', icon: Users },
 ];
 
 export default function About() {

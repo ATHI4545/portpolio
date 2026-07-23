@@ -14,11 +14,11 @@ const KNOWLEDGE_BASE = {
   },
   skills: {
     patterns: ['what are your skills', 'skills', 'technologies', 'what can you do', 'expertise', 'programming languages'],
-    response: "💻 Here are my key skills:\n\n🐍 Programming: Python (85%), Java (75%), C (70%)\n🌐 Web Dev: JavaScript (78%), React.js (82%), HTML & CSS (88%)\n☁️ Tools: Firebase (80%), MongoDB (75%), MySQL (78%)\n🤖 AI/Data: Machine Learning (78%), Data Analytics (82%), Power BI (75%), Tableau (72%)\n\nTop Skills: Problem-Solving (88%), React.js (82%), HTML & CSS (88%)"
+    response: "💻 Here are my key skills:\n\n🐍 Programming: Python (85%), Java (75%), C (70%)\n🌐 Web Dev: JavaScript (78%), React.js (82%), HTML & CSS (88%)\n☁️ Tools: Firebase (80%), MongoDB (75%), MySQL (78%), MS Dynamics 365 (70%)\n🤖 AI/Data: Machine Learning (78%), Data Analytics (82%), Power BI (75%), Tableau (72%)\n🔧 DevOps: Git (80%), GitHub (82%), Version Control (78%)\n\nTop Skills: React.js (82%), HTML & CSS (88%), GitHub (82%)"
   },
   projects: {
     patterns: ['projects', 'portfolio', 'what have you built', 'show me your work', 'past projects', 'what projects'],
-    response: "🚀 I've worked on 5 exciting projects:\n\n1. **Protein Bind Analysis** - AI-powered drug discovery chatbot using NVIDIA API & Python\n2. **Car Showroom Booking** - Full-stack booking web app with 3D model integration\n3. **AI Roadmap Generator** - Personalized learning path recommender\n4. **Sales Market Analysis** - BI dashboard with Power BI & Tableau\n5. **House Price Prediction** - ML model for real estate pricing\n\nCheck them out in my portfolio!"
+    response: "🚀 I've worked on 5+ exciting projects:\n\n1. **ARS SmartTrack** - Full-stack productivity & developer dashboard (React 19, Node.js, Firebase, Groq AI, NVIDIA API)\n2. **Protein Bind Analysis** - AI-powered drug discovery chatbot using NVIDIA API & Python\n3. **Car Showroom Booking** - Full-stack booking web app with 3D model integration\n4. **AI Roadmap Generator** - Personalized learning path recommender\n5. **Sales Market Analysis** - BI dashboard with Power BI & Tableau\n\nCheck them out in my portfolio!"
   },
   experience: {
     patterns: ['experience', 'internship', 'work experience', 'jobs', 'what have you worked on', 'career'],
@@ -30,7 +30,7 @@ const KNOWLEDGE_BASE = {
   },
   achievements: {
     patterns: ['achievements', 'awards', 'accomplishments', 'what have you achieved', 'recognition'],
-    response: "🏆 Key Achievements:\n\n• Protein binding analysis: 500+ interactions analyzed\n• Fixed 15+ critical bugs in production code\n• Processed 5,000+ customer records in data projects\n• 2nd Place Technical Presentation Award\n• 300+ LeetCode problems solved\n• Improved team efficiency by 40% with optimized solutions"
+    response: "🏆 Key Achievements:\n\n• Protein binding analysis: 500+ interactions analyzed\n• Fixed 15+ critical bugs in production code\n• Processed 5,000+ customer records in data projects\n• 2nd Place Technical Presentation Award\n• 400+ LeetCode problems solved\n• Improved team efficiency by 40% with optimized solutions"
   },
   contact: {
     patterns: ['contact', 'email', 'phone', 'how to reach', 'get in touch', 'reach out', 'messaging'],
@@ -42,11 +42,11 @@ const KNOWLEDGE_BASE = {
   },
   resume: {
     patterns: ['resume', 'cv', 'download resume', 'my resume', 'curriculum'],
-    response: "📄 Resume:\n\nYou can download my resume from the hero section. It contains:\n• Complete education details\n• All internship experiences\n• Technical skills breakdown\n• Project descriptions\n• Certifications\n\n[Download: Athityaa_Resume_.pdf]"
+    response: "📄 Resume:\n\nYou can download my resume from the hero section. It contains:\n• Complete education details\n• All internship experiences\n• Technical skills breakdown\n• Project descriptions\n• Certifications\n\n[Download: Resume_Athityaa_.pdf]"
   },
   leetcode: {
     patterns: ['leetcode', 'coding problems', 'dsa', 'competitive programming', 'problems solved'],
-    response: "💡 LeetCode Stats:\n\n• 300+ problems solved\n• Strong in Data Structures & Algorithms\n• Focus areas: Arrays, Trees, Graphs, Dynamic Programming\n• Consistent weekly practice\n\nProfile: Check my activity on LeetCode for detailed stats!"
+    response: "💡 LeetCode Stats:\n\n• 400+ problems solved\n• Strong in Data Structures & Algorithms\n• Focus areas: Arrays, Trees, Graphs, Dynamic Programming\n• Consistent weekly practice\n\nProfile: Check my activity on LeetCode for detailed stats!"
   },
   certificates: {
     patterns: ['certificates', 'certifications', 'certificates', 'certs', 'diploma'],

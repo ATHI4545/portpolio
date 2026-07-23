@@ -30,7 +30,6 @@ body {
   background: linear-gradient(135deg, #0a0e27 0%, #1a0033 50%, #0d1b2a 100%);
   color: #f1f5f9;
   overflow-x: hidden;
-  cursor: none;
   height: calc(var(--vh, 1vh) * 100);
 }
 
@@ -38,53 +37,6 @@ body {
 .h-screen { height: calc(var(--vh, 1vh) * 100); }
 .min-h-screen { min-height: calc(var(--vh, 1vh) * 100); }
 
-/* ───────── Custom Cursor ───────── */
-#cursor-outer {
-  position: fixed;
-  width: 36px;
-  height: 36px;
-  border: 2.5px solid;
-  border-image: linear-gradient(135deg, #00d9ff, #0066cc, #00ffff) 1;
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 99999;
-  transform: translate(-50%, -50%);
-  transition: all 0.15s ease;
-  mix-blend-mode: screen;
-  box-shadow: 0 0 16px rgba(0, 217, 255, 0.6), inset 0 0 12px rgba(0, 102, 204, 0.2);
-}
-
-#cursor-inner {
-  position: fixed;
-  width: 10px;
-  height: 10px;
-  background: radial-gradient(circle, #00ffff, #0066cc);
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 99999;
-  transform: translate(-50%, -50%);
-  transition: width 0.15s, height 0.15s, background 0.15s;
-  box-shadow: 0 0 16px #00d9ff, 0 0 32px rgba(0, 102, 204, 0.8), 0 0 48px rgba(0, 217, 255, 0.5);
-  animation: cursor-pulse 2s ease-in-out infinite;
-}
-
-@keyframes cursor-pulse {
-  0%, 100% { box-shadow: 0 0 16px #00d9ff, 0 0 32px rgba(0, 102, 204, 0.8), 0 0 48px rgba(0, 217, 255, 0.5); }
-  50% { box-shadow: 0 0 20px #00ffff, 0 0 40px rgba(0, 102, 204, 1), 0 0 60px rgba(0, 217, 255, 0.7); }
-}
-
-body.cursor-hover #cursor-outer {
-  width: 70px;
-  height: 70px;
-  border-width: 3px;
-  background: rgba(0,217,255,0.15);
-  box-shadow: 0 0 24px rgba(0, 217, 255, 0.8), inset 0 0 20px rgba(0, 102, 204, 0.3), 0 0 40px rgba(0, 217, 255, 0.4);
-}
-
-body.cursor-hover #cursor-inner {
-  width: 8px;
-  height: 8px;
-}
 
 /* ───────── Glassmorphism ───────── */
 .glass {
